@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        WebView(url :URL(string: "https://ourworldindata.org/covid-vaccinations")!)
+        
+            .edgesIgnoringSafeArea(.bottom)
     }
 }
 
